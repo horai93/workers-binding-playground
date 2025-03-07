@@ -25,6 +25,20 @@ export default async function Home() {
           </span>
         </p>
       </div>
+
+      <div className="mt-6">
+        <h2 className="text-2xl font-bold mb-4">デモページ</h2>
+        <ul className="list-disc pl-6">
+          <li className="mb-2">
+            <a href="/private" className="text-blue-500 hover:underline">
+              Private API デモ
+            </a>
+            <span className="ml-2 text-gray-600">
+              - Service Bindingを使用してprivate APIを呼び出す
+            </span>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

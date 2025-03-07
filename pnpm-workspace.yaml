@@ -2,7 +2,7 @@ packages:
   - apps/**
 catalog:
   "@biomejs/biome": ^1.9.4
-  "@cloudflare/workers-types": ^4.20250303.0
+  "@cloudflare/workers-types": ^4.20250214.0
   "@opennextjs/cloudflare": ^0.5.8
   "@types/node": ^20
   "@types/react": ^18
@@ -15,4 +15,4 @@ catalog:
   tailwindcss: ^3.4.1
   turbo: ^2.4.2
   typescript: ^5
-  wrangler: ^3.114.0
+  wrangler: ^3.109.2

@@ -4,7 +4,7 @@
  */
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "nextjs",
+  "name": "workers-binding-playground-nextjs",
   "main": ".open-next/worker.js",
   "compatibility_date": "2024-09-26",
   "compatibility_flags": ["nodejs_compat"],
@@ -21,6 +21,10 @@
       "binding": "HONO_APP",
       "entrypoint": "DataFetcher",
       "service": "workers-binding-playground-hono"
+    },
+    {
+      "binding": "PRIVATE_API",
+      "service": "workers-binding-playground-private"
     }
   ],
   "env": {
@@ -29,6 +33,10 @@
         {
           "binding": "HONO_APP",
           "service": "workers-binding-playground-hono-production"
+        },
+        {
+          "binding": "PRIVATE_API",
+          "service": "workers-binding-playground-private"
         }
       ]
     }

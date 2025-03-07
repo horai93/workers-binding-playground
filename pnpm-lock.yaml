@@ -10,7 +10,7 @@ catalogs:
       specifier: ^1.9.4
       version: 1.9.4
     '@cloudflare/workers-types':
-      specifier: ^4.20250303.0
+      specifier: ^4.20250214.0
       version: 4.20250303.0
     '@opennextjs/cloudflare':
       specifier: ^0.5.8
@@ -49,7 +49,7 @@ catalogs:
       specifier: ^5
       version: 5.8.2
     wrangler:
-      specifier: ^3.114.0
+      specifier: ^3.109.2
       version: 3.114.0
 
 importers:
@@ -78,6 +78,15 @@ importers:
 
   apps/nextjs:
     dependencies:
+      '@workers-binding-playground/hono':
+        specifier: workspace:*
+        version: link:../hono
+      '@workers-binding-playground/private':
+        specifier: workspace:*
+        version: link:../private
+      hono:
+        specifier: 'catalog:'
+        version: 4.7.4
       next:
         specifier: 'catalog:'
         version: 14.2.24(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -112,6 +121,19 @@ importers:
       typescript:
         specifier: 'catalog:'
         version: 5.8.2
+      wrangler:
+        specifier: 'catalog:'
+        version: 3.114.0(@cloudflare/workers-types@4.20250303.0)
+
+  apps/private:
+    dependencies:
+      hono:
+        specifier: 'catalog:'
+        version: 4.7.4
+    devDependencies:
+      '@cloudflare/workers-types':
+        specifier: 'catalog:'
+        version: 4.20250303.0
       wrangler:
         specifier: 'catalog:'
         version: 3.114.0(@cloudflare/workers-types@4.20250303.0)
@@ -2705,7 +2727,7 @@ snapshots:
       '@aws-crypto/sha256-js': 3.0.0
       '@aws-crypto/supports-web-crypto': 3.0.0
       '@aws-crypto/util': 3.0.0
-      '@aws-sdk/types': 3.398.0
+      '@aws-sdk/types': 3.734.0
       '@aws-sdk/util-locate-window': 3.723.0
       '@aws-sdk/util-utf8-browser': 3.259.0
       tslib: 1.14.1
@@ -2723,7 +2745,7 @@ snapshots:
   '@aws-crypto/sha256-js@3.0.0':
     dependencies:
       '@aws-crypto/util': 3.0.0
-      '@aws-sdk/types': 3.398.0
+      '@aws-sdk/types': 3.734.0
       tslib: 1.14.1
 
   '@aws-crypto/sha256-js@5.2.0':
@@ -2742,7 +2764,7 @@ snapshots:
 
   '@aws-crypto/util@3.0.0':
     dependencies:
-      '@aws-sdk/types': 3.398.0
+      '@aws-sdk/types': 3.734.0
       '@aws-sdk/util-utf8-browser': 3.259.0
       tslib: 1.14.1
 
@@ -5514,7 +5536,7 @@ snapshots:
 
   send@1.1.0:
     dependencies:
-      debug: 4.3.6
+      debug: 4.4.0
       destroy: 1.2.0
       encodeurl: 2.0.0
       escape-html: 1.0.3

@@ -8,6 +8,10 @@
     },
     "cf-typegen": {
       "cache": false
+    },
+    "deploy": {
+      "cache": false,
+      "outputs": ["dist/**", ".next/**"]
     }
   }
 }
