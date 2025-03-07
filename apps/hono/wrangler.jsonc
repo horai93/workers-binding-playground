@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "hono",
+  "name": "workers-binding-playground-hono",
   "main": "src/index.ts",
   "compatibility_date": "2025-03-07"
   // "compatibility_flags": [

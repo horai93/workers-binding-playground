@@ -1,5 +1,7 @@
 import { Hono } from "hono";
 
+export { DataFetcher } from "./data-fetcher";
+
 const app = new Hono();
 
 app.get("/", (c) => {
