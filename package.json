@@ -1,0 +1,13 @@
+{
+  "name": "workers-binding-playground",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "turbo dev",
+    "format": "biome format --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "turbo": "catalog:"
+  },
+  "packageManager": "pnpm@10.4.0"
+}

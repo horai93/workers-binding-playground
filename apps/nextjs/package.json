@@ -1,0 +1,30 @@
+{
+	"name": "nextjs",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"deploy": "opennextjs-cloudflare && wrangler deploy",
+		"preview": "opennextjs-cloudflare && wrangler dev",
+		"cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+	},
+	"dependencies": {
+		"next": "catalog:",
+		"react": "catalog:",
+		"react-dom": "catalog:"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "catalog:",
+		"@opennextjs/cloudflare": "catalog:",
+		"@types/node": "catalog:",
+		"@types/react": "catalog:",
+		"@types/react-dom": "catalog:",
+		"postcss": "catalog:",
+		"tailwindcss": "catalog:",
+		"typescript": "catalog:",
+		"wrangler": "catalog:"
+	}
+}
